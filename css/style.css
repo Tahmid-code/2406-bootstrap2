@@ -1,0 +1,73 @@
+
+
+
+a{
+    text-decoration: none;
+}
+:root{ 
+    --fontfam: "Poppins", sans-serif;
+    --fontclr: #353535;
+    --font2: "PT Sans", sans-serif;
+
+}
+/* Navbar */
+#nav ul li a {
+    font-family: var(--fontfam);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 18px 25px;
+    position: relative;
+}
+#nav ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--fontclr);
+    visibility: hidden;
+}
+#nav ul li a:hover::before{
+    visibility: visible;
+    width: 100%;
+    transition: 0.4s;
+}
+.row {
+    display: flex;
+}
+/* end of navbar */
+/* BANNER */
+#BANNER .container h4 {
+    font-family: var(--fontfam);
+    font-size: 24px;
+    font-weight: 400;
+}
+#BANNER .container h2 {
+    font-family: var(--font2);
+    font-size: 64px;
+    font-weight: 700;
+}
+#BANNER .container p {
+    font-family: var(--fontfam);
+    font-size: 20px;
+    font-weight: 400;
+}
+#BANNER .banner_btn {
+    border-radius: 20px;
+    display: inline-block;
+    padding: 16px 0px 17px 43px;
+    font-family: var(--fontfam);
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #FFCC00;
+}
+#BANNER .banner_btn span {
+    padding: 0 47px 0 11px;
+}
+#BANNER .banner_btn:hover{
+    background-color: transparent;
+    transition: 0.5s;
+}
+ 
+/* END OF BANNER */
